@@ -2,8 +2,21 @@ import request from 'request-promise'
 
 const baseUri = 'https://www.livecoding.tv/api/v1'
 
+/**
+ * Api version 1 client
+ */
 export default class Version1 {
+
+  /**
+   * Create a new instance
+   *
+   * @param  {String} token Access token
+   * @return {Object}       API version 1 client
+   */
   constructor (token) {
+    /**
+     * @type {String}
+     */
     this.token = token
   }
 
@@ -50,6 +63,8 @@ export default class Version1 {
   /**
    * Get a single coding category
    *
+   * @param {String} name Category name eg. Javascript
+   *
    * @return {Promise} Response
    */
   codingCategory (name) {
@@ -77,6 +92,8 @@ export default class Version1 {
   /**
    * Get the current/latest livestream for a user
    *
+   * @param {String} slug User's slug (username)
+   *
    * @return {Promise} Response
    */
   livestreamForUser (slug) {
@@ -95,6 +112,8 @@ export default class Version1 {
   /**
    * Get a spoken language by its name
    *
+   * @param {String} name Language name
+   *
    * @return {Promise} Response
    */
   language (name) {
@@ -104,9 +123,9 @@ export default class Version1 {
   /**
    * Get a user by their slug
    *
-   * @param  {String}  slug The user's slug
+   * @param  {String} slug User's slug (username)
    *
-   * @return {Promise}      Response
+   * @return {Promise} Response
    */
   user (slug) {
     return this.get(`/users/${slug}`)
@@ -124,9 +143,9 @@ export default class Version1 {
   /**
    * Get a single scheduled broadcast by its ID
    *
-   * @param  {Number}  id Scheduled broadcast ID
+   * @param  {Number} id Scheduled broadcast ID
    *
-   * @return {Promise}   Response
+   * @return {Promise} Response
    */
   scheduledBroadcast (id) {
     return this.get(`/scheduledbroadcast/${id}`)
@@ -144,9 +163,9 @@ export default class Version1 {
   /**
    * Get a single video by its
    *
-   * @param  {String}  slug Video slug
+   * @param  {String} slug Video slug
    *
-   * @return {Promise}      Response
+   * @return {Promise} Response
    */
   video (slug) {
     return this.get(`/videos/${slug}`)
