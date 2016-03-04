@@ -3,8 +3,10 @@ import { createSpy } from 'expect'
 
 export const requestSpy = createSpy().andReturn(Promise.resolve({ foo: 'bar' }))
 
-const { livecoding } = proxyquire('../../src/livecoding', {
-  'request-promise': requestSpy
+const { default: Livecoding } = proxyquire('../../src/Livecoding', {
+  'Version1': proxyquire('../../src/Version1', {
+    'request-promise': requestSpy
+  })
 })
 
-export default livecoding
+export default Livecoding
