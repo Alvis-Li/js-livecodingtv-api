@@ -3,8 +3,8 @@ import proxyquire from 'proxyquire'
 import { createSpy } from 'expect'
 
 const paths = {
-  Livecoding: __dirname + '/../../src/Livecoding',
-  Version1: __dirname + '/../../src/Version1'
+  Livecoding: __dirname + '/../../src/Livecoding.js',
+  Version1: __dirname + '/../../src/Version1.js'
 }
 
 export const requestSpy = createSpy().andReturn(Promise.resolve({ foo: 'bar' }))
