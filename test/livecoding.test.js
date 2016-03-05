@@ -1,4 +1,5 @@
 /* eslint-env mocha */
+import Promise from 'bluebird'
 import expect, { createSpy } from 'expect'
 import Livecoding, { requestSpy } from './mocks/livecoding.mock'
 

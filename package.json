@@ -6,6 +6,7 @@
   "scripts": {
     "build": "babel src -d dist",
     "prepublish": "npm run build",
+    "clean": "rm -rf dist node_modules && npm install",
     "test": "mocha && standard"
   },
   "repository": {
@@ -39,6 +40,7 @@
     "standard": "^6.0.7"
   },
   "dependencies": {
+    "bluebird": "^3.3.3",
     "expect": "^1.14.0",
     "request-promise": "^2.0.1"
   }
