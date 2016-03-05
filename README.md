@@ -32,6 +32,6 @@ Additionally, you should check the [Livecoding.tv API docs](https://www.livecodi
 
 ## Todo
 
-[ ] Support Authorization Code authentication
-[ ] Add a Response type to support pagination (next, previous, all)
-[ ] Integration tests with real API calls
+- [ ] Support Authorization Code authentication
+- [ ] Add a Response type to support pagination (next, previous, all)
+- [ ] Integration tests with real API calls
