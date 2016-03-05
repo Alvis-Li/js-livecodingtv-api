@@ -7,7 +7,8 @@
     "build": "babel src -d dist",
     "prepublish": "npm run build",
     "clean": "rm -rf dist node_modules && npm install",
-    "test": "mocha && standard"
+    "lint": "standard --verbose | snazzy || true",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "mocha": "^2.4.5",
     "proxyquire": "^1.7.4",
     "sinon": "^1.17.3",
+    "snazzy": "^3.0.0",
     "standard": "^6.0.7"
   },
   "dependencies": {
