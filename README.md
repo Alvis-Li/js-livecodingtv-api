@@ -1,3 +1,7 @@
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/JordanAdams/js-livecodingtv-api)
+[![Code Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![Documentation](https://doc.esdoc.org/github.com/JordanAdams/js-livecodingtv-api/badge.svg)](https://doc.esdoc.org/github.com/JordanAdams/js-livecodingtv-api)
+
 # Livecoding.tv JS API Wrapper
 
 A simple wrapper for the Livecoding.tv API.
