@@ -39,3 +39,5 @@ Additionally, you should check the [Livecoding.tv API docs](https://www.livecodi
 - [ ] Support Authorization Code authentication
 - [ ] Add a Response type to support pagination (next, previous, all)
 - [ ] Integration tests with real API calls
+- [ ] Add code coverage tests
+- [ ] Restructure test files to match files in ./src
